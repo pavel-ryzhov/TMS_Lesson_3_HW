@@ -2,6 +2,9 @@ package Documents;
 
 import java.util.Date;
 
+/**
+ * Финансовая накладная
+ */
 public class FinancialInvoice extends Document {
     private int totalAmount;
     private int departmentCode;

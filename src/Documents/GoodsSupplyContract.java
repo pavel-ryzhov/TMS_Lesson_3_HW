@@ -2,6 +2,9 @@ package Documents;
 
 import java.util.Date;
 
+/**
+ * Контракт на поставку товаров
+ */
 public class GoodsSupplyContract extends Document{
     private String productType;
     private int productAmount;

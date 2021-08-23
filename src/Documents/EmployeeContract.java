@@ -2,6 +2,9 @@ package Documents;
 
 import java.util.Date;
 
+/**
+ * Контракт с сотрудником
+ */
 public class EmployeeContract extends Document{
     private Date dateOfEnd;
     private String employeeName;
