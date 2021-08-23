@@ -16,13 +16,14 @@ public class Main {
     public static void main(String[] args) {
         GregorianCalendar calendar = new GregorianCalendar();
         calendar.add(Calendar.MONTH, 1);
+        Register register = new Register();
 
-        Register.addDocument(new EmployeeContract(325, new Date(), calendar.getTime(), "Alex"));
-        Register.addDocument(new GoodsSupplyContract(743, new Date(), "some_type", 7));
-        Register.addDocument(new FinancialInvoice(943, new Date(), 894398, 999));
+        register.addDocument(new EmployeeContract(325, new Date(), calendar.getTime(), "Alex"));
+        register.addDocument(new GoodsSupplyContract(743, new Date(), "some_type", 7));
+        register.addDocument(new FinancialInvoice(943, new Date(), 894398, 999));
 
-        System.out.println(Register.showInformation(0));
-        System.out.println(Register.showInformation(1));
-        System.out.println(Register.showInformation(2));
+        System.out.println(register.showInformation(0));
+        System.out.println(register.showInformation(1));
+        System.out.println(register.showInformation(2));
     }
 }
